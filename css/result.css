@@ -1,0 +1,32 @@
+
+.containerum {
+    background-color: #56a51d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-select {
+    border-radius: 8px;
+}
+
+#image-display {
+    margin-top: 20px;
+}
+
+#image-display img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#share-button .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#share-button .btn i {
+    margin-right: 8px;
+}

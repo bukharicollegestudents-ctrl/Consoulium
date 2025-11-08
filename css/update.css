@@ -1,0 +1,237 @@
+/** result**/
+
+#results {
+    margin-top: 20px;
+}
+
+.result-item {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/** gallery**/
+
+.gallery-area .gallery-box .single-gallery {
+    overflow: hidden;
+    z-index: 0;
+    position: relative
+}
+
+.gallery-area .gallery-box .single-gallery::after {
+    content: "";
+    background-color: rgba(11, 14, 13, 0.702);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s
+}
+
+.gallery-area .gallery-box .single-gallery .big-img {
+    height: 730px
+}
+
+.gallery-area .gallery-box .single-gallery .smoll-img {
+    height: 365px
+}
+
+.gallery-area .gallery-box .single-gallery .gallery-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 486px
+}
+
+.gallery-box:hover .single-gallery::after {
+    visibility: visible;
+    opacity: 1
+}
+
+
+.bg-img-1 {
+    background-image: url(../img/NEWS/INAGURATION.jpeg)
+}
+
+.bg-img-2 {
+    background-image: url(../img/NEWS/ARIVANUBAVAM.jpeg)
+}
+
+.cta-bg-1 {
+    background-image: url(../img/NEWS/ARIVANUBAVAM.jpeg)
+}
+
+.img {
+    max-width: 100%;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.f-left {
+    float: left
+}
+
+.f-right {
+    float: right
+}
+
+.fix {
+    overflow: hidden
+}
+
+.clear {
+    clear: both
+}
+
+/*** Hero Header ***/
+.hero-header {
+    background: linear-gradient(#00000091, #1214024e);
+    background-position: center center;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header img {
+    animation: scaleUp 1s ease-in-out;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+/*galllary in home*/
+
+
+.banner .col-md-7 {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.banner .col-md-5 {
+    padding-right: 35px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.banner .left-banner-content {
+    padding-top: 200px;
+    padding-bottom: 130px;
+    padding-left: 100px;
+    padding-right: 90px;
+    text-align: left;
+    background-image: linear-gradient(#070800b1, #111210a1),
+        url(../Gallery/opening.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    min-height: 750px;
+    height: 750px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.left-banner-content h6 {
+    font-size: 15px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.left-banner-content h1 {
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 40px;
+}
+
+.left-banner-content .line-dec {
+    width: 90px;
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: #f4bc51;
+}
+
+.left-banner-content .white-border-button {
+    margin-top: 52px;
+
+}
+
+
+/*galllary in rwsultants*/
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#image-display {
+    margin-top: 20px;
+}
+
+/** gallery page**/
+
