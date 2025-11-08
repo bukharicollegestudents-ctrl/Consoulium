@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://consoulium.com/</loc>
+  <lastmod>2024-11-19T18:49:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://consoulium.com/index.html</loc>
+  <lastmod>2024-11-19T18:49:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://consoulium.com/about.html</loc>
+  <lastmod>2024-11-19T18:50:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://consoulium.com/Festival.html</loc>
+  <lastmod>2024-11-19T18:50:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://consoulium.com/Events.html</loc>
+  <lastmod>2024-11-19T18:50:18+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://consoulium.com/news.html</loc>
+  <lastmod>2024-11-19T18:49:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://consoulium.com/contact.html</loc>
+  <lastmod>2024-11-19T18:50:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
