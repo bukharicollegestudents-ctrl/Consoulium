@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consoulium - Uploading...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="under-construction.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Instrument Sans', 'sans-serif'],
+              pixel: ['Pixelify Sans', 'cursive'],
+            },
+            colors: {
+              brand: {
+                yellow: '#FFCA28', // Primary
+                teal: '#00897B',   // Secondary
+                cyan: '#26A69A',   // Accent
+                dark: '#051110',   // Very Dark Teal/Black for BG
+                surface: '#002E29' // Slightly lighter dark
+              }
+            },
+            animation: {
+                'spin-slow': 'spin 12s linear infinite',
+                'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-brand-dark text-white h-screen w-full overflow-hidden flex flex-col relative selection:bg-brand-yellow selection:text-black">
+
+    <!-- Background Grid -->
+    <div class="absolute inset-0 z-0 opacity-20" style="background-image: radial-gradient(#00897B 1px, transparent 1px); background-size: 40px 40px;"></div>
+    
+    <!-- Ambient Glows -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-teal/20 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-yellow/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Header / Logo -->
+    <header class="w-full p-8 md:p-12 z-20 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <svg class="h-8 md:h-10 w-auto" viewBox="0 0 240 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5 5L39.8205 15V35L22.5 45L5.17949 35V15L22.5 5Z" fill="#FFCA28"/>
+                <path d="M22.5 15L31.1603 20V30L22.5 35L13.8397 30V20L22.5 15Z" fill="#00897B"/>
+                <text x="55" y="32" fill="white" font-family="Instrument Sans, sans-serif" font-size="28" font-weight="bold" letter-spacing="-1">Consoulium</text>
+            </svg>
+        </div>
+        <div class="hidden md:flex items-center gap-2 px-3 py-1 rounded-full bg-brand-surface border border-brand-teal/30 text-xs font-bold uppercase tracking-widest text-brand-yellow">
+            <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+            System Update
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 flex flex-col items-center justify-center z-20 px-4 w-full max-w-4xl mx-auto text-center">
+        
+        <!-- Status Badge -->
+        <div class="mb-8 inline-block">
+            <span class="bg-brand-teal/10 border border-brand-teal/30 text-brand-cyan px-4 py-1.5 rounded-full font-mono text-sm">
+                v25.0.1 <span class="mx-2 opacity-50">|</span> Uploading Assets...
+            </span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-6xl md:text-8xl font-medium leading-none tracking-tight mb-6">
+            Site Under <br />
+            <span class="font-pixel text-brand-yellow glitch-text" data-text="Construction">Construction</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-gray-400 max-w-xl mx-auto mb-16 leading-relaxed">
+            We are currently updating our digital experience for the upcoming festival. 
+            Great things are loading.
+        </p>
+
+        <!-- Loader Component -->
+        <div class="w-full max-w-md mx-auto relative group">
+            <!-- Progress Bar Container -->
+            <div class="h-2 w-full bg-brand-surface rounded-full overflow-hidden relative">
+                <!-- Moving Bar -->
+                <div class="absolute top-0 left-0 h-full bg-brand-yellow progress-animation w-full rounded-full"></div>
+                <!-- Shimmer Effect -->
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent w-full h-full -translate-x-full shimmer-animation"></div>
+            </div>
+            
+            <!-- Percentage Text -->
+            <div class="flex justify-between items-center mt-3 font-mono text-xs text-brand-cyan">
+                <span>UPLOADING_FILES: core_modules.jsx</span>
+                <span class="percentage-counter">87%</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full p-8 md:p-12 z-20 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 font-medium tracking-wide">
+        <p>&copy; 2025 Consoulium Cultural Fest.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-brand-yellow transition-colors">Instagram</a>
+            <a href="#" class="hover:text-brand-yellow transition-colors">Twitter</a>
+            <a href="mailto:contact@consoulium.edu" class="hover:text-brand-yellow transition-colors">Contact Support</a>
+        </div>
+    </footer>
+
+    <!-- Simple Script for Counter Effect -->
+    <script>
+        const counter = document.querySelector('.percentage-counter');
+        let count = 87;
+        
+        // Randomly increment the counter slightly to simulate real loading
+        setInterval(() => {
+            if (count < 99) {
+                if(Math.random() > 0.7) {
+                    count++;
+                    counter.innerText = count + '%';
+                }
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
